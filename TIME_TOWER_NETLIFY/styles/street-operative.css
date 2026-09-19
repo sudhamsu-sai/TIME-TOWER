@@ -1,0 +1,12 @@
+/* Original Street Operative costume — a stylized in-game design. */
+.street-preview{background:radial-gradient(circle at 50% 55%,#ffb35c55 0,transparent 57%),linear-gradient(135deg,#1e1210,#3a281c)}
+.street-preview i{background:#70432c;box-shadow:none}
+.street-preview i:before{content:"";position:absolute;left:0;top:-5px;width:27px;height:14px;border-radius:15px 15px 4px 4px;background:#15100e}
+.street-preview i:after{content:"";position:absolute;left:6px;top:16px;width:15px;height:8px;border-radius:0 0 8px 8px;background:#17100e}
+.street-preview b{background:#f3f0e8;border-bottom-color:#171923}
+.street-preview em{background:#ffba64;box-shadow:0 0 14px #ffb35c}
+.street-avatar i{background:#70432c;box-shadow:none}
+.street-avatar i:before{content:"";position:absolute;left:0;top:-4px;width:18px;height:10px;border-radius:12px 12px 3px 3px;background:#15100e}
+.street-avatar i:after{content:"";position:absolute;left:4px;top:11px;width:10px;height:6px;border-radius:0 0 7px 7px;background:#15100e}
+.street-avatar b{background:#f3f0e8;border-bottom-color:#171923}
+.street-avatar em{background:#ffba64;box-shadow:0 0 12px #ffb35c}

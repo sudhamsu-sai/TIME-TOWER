@@ -1,0 +1,33 @@
+/* Responsive shell: desktop remains 16:10; phones retain the full tower view. */
+.touch-controls,.mobile-tip{display:none}
+@media (max-width:700px){
+  body{min-height:100svh;display:block;overflow:auto;background:#03060d}
+  #game-shell{width:100vw;max-width:none;min-height:100svh;aspect-ratio:auto;box-shadow:none;overflow:hidden}
+  canvas{width:100%;height:100%;min-height:0;display:block}
+  .hud{padding:8px 10px}
+  .level{font-size:11px;max-width:62%;line-height:1.25}
+  .level span{display:block;font-size:8px;margin-top:2px}
+  .title{font-size:16px;top:8px}
+  .energy{right:10px;top:8px;font-size:9px}
+  .energy[style]{right:10px!important;top:33px!important;font-size:8px}
+  .bar{width:102px;height:8px;margin-top:2px}
+  .timer{bottom:118px;min-width:92px;padding:2px 6px;font-size:7px}
+  .timer b{font-size:14px;line-height:13px}
+  .hint{display:none}
+  .leave-game{left:10px;bottom:10px;font-size:8px;padding:5px 7px}
+  .touch-controls{display:grid;grid-template-columns:repeat(4,46px) 58px;gap:6px;position:absolute;left:50%;bottom:13px;transform:translateX(-50%);pointer-events:auto}
+  .touch-controls button{height:46px;border:1px solid #63eaff;background:linear-gradient(145deg,#122b51,#26184f);color:#dffcff;border-radius:12px;font:700 23px Rajdhani;box-shadow:0 0 14px #42dfff55;touch-action:manipulation}
+  .touch-controls button:active{transform:scale(.92);background:#55e9ff;color:#06101d}
+  .touch-controls .rewind-touch{height:46px;background:linear-gradient(145deg,#59347e,#182c5d);font-size:30px}
+  .mobile-tip{display:block;position:absolute;left:50%;bottom:66px;transform:translateX(-50%);white-space:nowrap;font:700 8px 'Space Mono';letter-spacing:.04em;color:#76edff}
+  .toast{top:44px;max-width:82%;font-size:11px;padding:5px 10px}
+  .screen{min-height:100svh;padding:22px 16px;align-content:start;overflow-y:auto}
+  .menu-content{margin:25px auto 0;width:min(280px,86vw)}
+  .menu-content .logo{font-size:52px}.menu-actions .menu{width:100%}
+  .tower-art{right:-155px;bottom:3%;opacity:.34}.footer{display:none}
+  .modal{max-width:100%;width:100%;margin:auto}.modal h1{font-size:28px}.modal p{font-size:11px}
+  .levelgrid{width:100%;grid-template-columns:repeat(3,1fr)}.levelgrid button{min-width:0}
+}
+@media (max-width:700px) and (orientation:landscape){
+  body{display:grid;place-items:center;overflow:hidden}#game-shell{width:min(100vw,calc(100svh * 1.655));min-height:0;aspect-ratio:1.655}canvas{height:100%;width:100%}
+}

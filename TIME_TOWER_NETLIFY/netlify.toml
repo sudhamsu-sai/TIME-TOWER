@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# TIME TOWER is a dependency-free static web game.
+# Netlify can deploy it directly without a build command.
